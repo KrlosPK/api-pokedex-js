@@ -1,121 +1,121 @@
-@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Roboto+Mono:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Roboto+Mono:wght@300&display=swap');
 
 /* Genera Rules */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto Mono", monospace;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
 }
 body *::selection {
-    color: red;
+  color: red;
 }
 body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    align-items: center;
-    background-color: #fff;
-    gap: 1em;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 100vh;
+  justify-content: center;
 }
 .container {
-    max-height: 700px;
-    width: 400px;
-    border-radius: 10px;
-    background-color: whitesmoke;
-    box-shadow: 0px 0px 0px 5px #00000043;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 5px #00000043;
+  display: flex;
+  flex-direction: column;
+  max-height: 700px;
+  position: relative;
+  width: 400px;
 }
 form {
-    height: 40px;
+  height: 40px;
 }
 input {
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid rgb(110, 108, 108);
-    background-color: transparent;
-    width: 21rem;
-    padding: 0.5em 1em;
-    font-family: inherit;
-    font-size: 1.1em;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(110, 108, 108);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-family: inherit;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+  width: 21rem;
 }
 input::placeholder {
-    text-align: center;
-    color: #535c68;
+  color: #535c68;
+  text-align: center;
 }
 input:focus {
-    border-bottom: 2px solid rgb(17, 9, 9);
-    font-weight: bold;
-    outline: none;
+  border-bottom: 2px solid rgb(17, 9, 9);
+  font-weight: bold;
+  outline: none;
 }
 input:focus::placeholder {
-    visibility: hidden;
+  visibility: hidden;
 }
 .poke-card {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 1rem;
-    width: 100%;
-    margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  width: 100%;
 }
 .poke-name {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 0.5rem;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 .img-container {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .img-container img {
-    width: 128px;
-    border-radius: 50%;
-    cursor: zoom-in;
+  border-radius: 50%;
+  cursor: zoom-in;
+  width: 128px;
 }
 .img-container img.fullscreen {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translate(-50%) scale(6);
-    z-index: 1;
-    cursor: zoom-out;
+  cursor: zoom-out;
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) translate(-50%) scale(6);
+  z-index: 1;
 }
 .poke-id {
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
 }
 .poke-types div {
-    font-size: 1.1em;
-    font-weight: bold;
-    text-transform: capitalize;
-    text-align: center;
-    border: 1px dotted #000;
-    margin: 0.5rem 0;
-    padding: 0.5rem;
+  border: 1px dotted #000;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: capitalize;
 }
 .poke-stats div {
-    text-transform: capitalize;
-    display: flex;
-    font-weight: bold;
-    font-size: 1.13em;
-    justify-content: space-between;
-    margin: 0.5rem 0;
+  display: flex;
+  font-size: 1.13em;
+  font-weight: bold;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  text-transform: capitalize;
 }
 footer {
-    font-weight: bold;
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    width: fit-content;
-    transform: translate(-50%);
-    text-align: center;
-    font-size: 1.1em;
+  bottom: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%);
+  width: fit-content;
 }
